@@ -4,7 +4,7 @@ export const GlobalStyle = createGlobalStyle`
   :root {
     --vh: 100%;
 
-  background: #f7f9fa;
+    background: #FCFAFB;
    }
 
   html, body, div, span, applet, object, iframe,
