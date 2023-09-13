@@ -1,10 +1,10 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { useNavigate, useLocation } from 'react-router-dom';
 import * as M from './MainStyle';
+import * as N from '../common/NavStyle';
 import Mouse from '../../img/main/Mouse.svg';
 import { useRecoilState } from 'recoil';
 import { visibilityState } from '../../atom/visibilityState/visibilityState';
-import * as N from '../common/NavStyle';
 
 const MainP = () => {
   {
