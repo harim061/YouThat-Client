@@ -53,6 +53,7 @@ export const Btn1 = styled.button`
 `;
 
 export const HowDiv = styled.div`
+  /*layout*/
   display: flex;
   align-items: center;
 `;
