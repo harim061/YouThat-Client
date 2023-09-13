@@ -1,8 +1,9 @@
 import { styled } from 'styled-components';
 
 export const NavContainer = styled.header`
+  z-index: 1;
   width: 80rem;
-  height: 70px;
+  height: 60px;
   margin: 0 auto;
 
   position: relative;
@@ -10,7 +11,7 @@ export const NavContainer = styled.header`
 `;
 export const NavFixed = styled.header`
   width: 80rem;
-  height: 70px;
+  height: 60px;
   position: fixed;
 `;
 
