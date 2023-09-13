@@ -9,7 +9,7 @@ export default function Footer() {
         className="waves"
         xmlns="http://www.w3.org/2000/svg"
         xmlnsXlink="http://www.w3.org/1999/xlink"
-        viewBox="0 24 150 28" 
+        viewBox="0 24 150 28"
         preserveAspectRatio="none"
         shapeRendering="auto">
         <defs>
@@ -22,6 +22,7 @@ export default function Footer() {
           <use xlinkHref="#gentle-wave" x="48" y="7" fill="#efd7f0 " />
         </g>
       </F.Waves>
+      <F.FName>2023한이음 ICT멘토링 Team. 콩 | 노하림 한진경 이서진 김채현</F.FName>
     </>
   );
 }

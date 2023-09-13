@@ -25,11 +25,10 @@ export const Ment = styled.div`
   margin-top: ${(props) => props.mt};
 `;
 
-export const Youtube = styled.div`
+export const Youtube = styled.img`
   width: 638px;
-  height: 385px;
-  background: url(<path-to-image>), lightgray 50% / cover no-repeat;
-
+  height: 400px;
+  border-radius: 20px;
   /*layout*/
   margin-top: 70px;
   margin-bottom: 70px;
@@ -43,7 +42,7 @@ export const Btn1 = styled.button`
   border-radius: 43px;
 
   /*layout*/
-  margin-bottom: 40px;
+  margin-top: 70px;
 
   /*text*/
   color: #fff;
@@ -88,7 +87,7 @@ export const StepT = styled.div`
 
 export const StepD = styled.div`
   color: #5b586c;
-  font-size: 38px;
+  font-size: 34px;
   font-style: normal;
   font-weight: 600;
   line-height: normal;

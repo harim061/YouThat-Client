@@ -1,8 +1,10 @@
 import React, { useEffect, useRef, useState } from 'react';
+import { useNavigate, useLocation } from 'react-router-dom';
 import * as M from './MainStyle';
 import Mouse from '../../img/main/Mouse.svg';
 import { useRecoilState } from 'recoil';
 import { visibilityState } from '../../atom/visibilityState/visibilityState';
+import * as N from '../common/NavStyle';
 
 const MainP = () => {
   {
@@ -34,8 +36,38 @@ const MainP = () => {
     };
   }, [setIsVisible]);
 
+  const navigate = useNavigate();
+  const location = useLocation();
+  const MENU_LIST = ['Login', 'My Page', 'Search', 'How to'];
+
+  function handleMovePage(menu) {
+    switch (menu) {
+      case 'Login':
+        navigate('/login');
+        break;
+      case 'My Page':
+        navigate('/mypage');
+        break;
+      case 'Search':
+        navigate('/search');
+        break;
+      case 'How to':
+        navigate('/howto');
+        break;
+      default:
+        navigate('/');
+    }
+  }
+
   return (
     <M.Container ref={containerRef}>
+      <N.MainNav>
+        {MENU_LIST.map((menu, idx) => (
+          <N.MainMenuUl key={idx} onClick={() => handleMovePage(menu)}>
+            {menu}
+          </N.MainMenuUl>
+        ))}
+      </N.MainNav>
       <M.Ment>
         당신의 Youtube의 길잡이
         <br />
