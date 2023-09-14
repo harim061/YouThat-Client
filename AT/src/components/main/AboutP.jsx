@@ -90,7 +90,12 @@ const AboutP = () => {
 
             <A.SDetail>{value}</A.SDetail>
             {index === 0 ? <A.STag src={Hash} /> : <></>}
-            <A.Btn2>회원가입 하러 가기</A.Btn2>
+            <A.Btn2
+              onClick={() => {
+                window.location = '/login';
+              }}>
+              로그인 하러 가기
+            </A.Btn2>
           </A.How>
         ))}
 
