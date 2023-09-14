@@ -1,6 +1,5 @@
 import React from 'react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import { styled } from 'styled-components';
 import Main from './pages/Main';
 import Login from './pages/Login';
 import Mypage from './pages/Mypage';
@@ -14,22 +13,16 @@ export default function Router() {
     <>
       <BrowserRouter>
         <Navigation />
-        <GlobalWrapper>
-          <Routes>
-            <Route path="/" element={<Main />} />
-            <Route path="/login" element={<Login />} />
-            <Route path="/mypage" element={<Mypage />} />
-            <Route path="/search" element={<Search />} />
-            <Route path="/content" element={<Content />} />
-            <Route path="/howto" element={<Main />} />
-          </Routes>
-        </GlobalWrapper>
+        <Routes>
+          <Route path="/" element={<Main />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/mypage" element={<Mypage />} />
+          <Route path="/search" element={<Search />} />
+          <Route path="/content" element={<Content />} />
+          <Route path="/howto" element={<Main />} />
+        </Routes>
         <Footer />
       </BrowserRouter>
     </>
   );
 }
-
-const GlobalWrapper = styled.main`
-  padding: 8rem;
-`;

@@ -1,5 +1,10 @@
 import React from 'react';
+import LoginP from '../components/login/LoginP';
 
 export default function Login() {
-  return <>로그인페이지</>;
+  return (
+    <>
+      <LoginP />
+    </>
+  );
 }
