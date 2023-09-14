@@ -48,3 +48,28 @@ export const NavBackground = styled.header`
   filter: blur(0.2rem);
   z-index: 1;
 `;
+
+export const MainNav = styled.div`
+  width: 1440px;
+  display: flex;
+  flex-direction: row;
+  color: #fff;
+  font-size: 25px;
+  font-style: normal;
+  justify-content: center;
+  align-items: flex-start;
+  font-weight: 400;
+  align-items: center;
+  gap: 71px;
+
+  margin-bottom: 130px;
+  margin-top: -120px;
+  :nth-child(1) {
+    padding-top: 0px;
+  }
+`;
+
+export const MainMenuUl = styled.ul`
+  font-size: 2rem;
+  color: white;
+`;

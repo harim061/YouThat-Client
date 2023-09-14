@@ -57,3 +57,18 @@ export const FTitle = styled.div`
   transform: translateX(-50%); // 가운데 정렬을 위한 코드
   z-index: 2;
 `;
+
+export const FName = styled.div`
+  color: #ffffff;
+  text-align: center;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+
+  position: relative;
+  top: 420px;
+  left: 36%;
+  transform: translateX(-50%); // 가운데 정렬을 위한 코드
+  z-index: 2;
+`;

@@ -22,6 +22,7 @@ export default function Footer() {
           <use xlinkHref="#gentle-wave" x="48" y="7" fill="#efd7f0 " />
         </g>
       </F.Waves>
+      <F.FName>2023한이음 ICT멘토링 Team. 콩 | 노하림 한진경 이서진 김채현</F.FName>
     </>
   );
 }
