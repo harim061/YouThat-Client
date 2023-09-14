@@ -1,4 +1,5 @@
 import { useNavigate, useLocation } from 'react-router-dom';
+import { useState } from 'react';
 import * as N from './NavStyle';
 import { useRecoilValue } from 'recoil';
 import { visibilityState } from '../../atom/visibilityState/visibilityState';
