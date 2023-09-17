@@ -1,7 +1,7 @@
 import { styled } from 'styled-components';
 
 export const UserDescriptionWrapper = styled.section`
-  margin-top: 5rem;
+  margin-top: 8rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -31,10 +31,10 @@ export const ProfileImg = styled.img`
   height: 20rem;
 `;
 export const UserGrade = styled.div`
-  height: 10rem;
+  height: 20rem;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   gap: 2rem;
 `;
@@ -43,7 +43,20 @@ export const DescriptionContent = styled.div`
   justify-content: center;
   align-items: center;
   gap: 3rem;
-
+`;
+export const Grade = styled.p`
+  font-size: 3rem;
+  color: #ef7a96;
+  text-align: center;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+`;
+export const GradeComment = styled.p`
+  display: flex;
+  justify-content: center;
+  align-items: center;
   color: #ef7a96;
   text-align: center;
   font-family: Inter;
@@ -52,18 +65,9 @@ export const DescriptionContent = styled.div`
   font-weight: 700;
   line-height: normal;
 `;
-export const Grade = styled.p`
-  font-size: 3rem;
-`;
-export const GradeComment = styled.p`
-  height: 20rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-`;
 
 export const GridWrapper = styled.div`
-  margin: 5rem 3rem;
+  margin: 5rem 12rem;
 `;
 export const Grid = styled.div`
   display: grid;

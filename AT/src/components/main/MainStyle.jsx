@@ -57,8 +57,8 @@ export const Title = styled.div`
 `;
 
 export const Input = styled.input`
-  width: 1003px;
-  height: 64px;
+  width: ${(props) => props.width || '1003px'};
+  height: ${(props) => props.height || '64px'};
   border-radius: 20px;
   background: #fff;
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
