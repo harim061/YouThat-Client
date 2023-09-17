@@ -25,6 +25,17 @@ export const Ment = styled.div`
   margin-top: ${(props) => props.mt};
 `;
 
+export const Ment2 = styled.a`
+  color: #5b586c;
+  text-align: center;
+  font-size: 15px;
+  font-weight: 600;
+
+  /*layout*/
+  margin-bottom: 100px;
+  margin-top: ${(props) => props.mt};
+`;
+
 export const Youtube = styled.img`
   width: 638px;
   height: 400px;

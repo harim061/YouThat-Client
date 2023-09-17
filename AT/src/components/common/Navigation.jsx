@@ -23,7 +23,7 @@ export default function Navigation() {
         navigate('/search');
         break;
       case 'How to':
-        navigate('/howto');
+        navigate('/');
         break;
       default:
         navigate('/');

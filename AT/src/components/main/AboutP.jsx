@@ -5,8 +5,7 @@ import Apre from '../../img/main/Apre.svg';
 import Hash from '../../img/main/Hash.svg';
 import { useState, useEffect } from 'react';
 import { RotateLoader } from 'react-spinners';
-import Thum from '../../img/main/Thum.svg';
-
+import Thum from '../../img/main/maxresdefault.jpg';
 const AboutP = () => {
   // Step 넘어가는 코드
 
@@ -77,7 +76,14 @@ const AboutP = () => {
       {loading && (
         <RotateLoader color="#EB6B92" margin={10} cssOverride={{ marginTop: '90px', marginBottom: '20px' }} />
       )}
-      {showYoutube && <A.Youtube src={Thum} />}
+      {showYoutube && (
+        <>
+          <A.Youtube src={Thum} />
+          <A.Ment2 href="https://www.youtube.com/watch?v=LxX-x4hfHS8" target="blank">
+            (SUB) 푸바오가 선택한 쌍둥이 동생들의 이름은?? 지금 바로 쌍둥이 이름 투표하러 가자!!🐼│Panda World
+          </A.Ment2>
+        </>
+      )}
       <A.Btn1>분석하러 가기</A.Btn1>
       <A.Btn1>내 유튜브 분석하러 가기</A.Btn1>
       <A.Ment mt="410px">AT을 똑똑하게 사용하는 방법</A.Ment>

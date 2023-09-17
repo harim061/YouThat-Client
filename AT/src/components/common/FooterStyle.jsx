@@ -11,6 +11,7 @@ export const moveForever = keyframes`
 
 export const Waves = styled.svg`
   position: absolute;
+
   margin-top: 130px;
   & .parallax > use {
     animation: ${moveForever} 25s cubic-bezier(0.55, 0.5, 0.45, 0.5) infinite;
@@ -52,7 +53,7 @@ export const FTitle = styled.div`
   letter-spacing: 10px;
 
   position: relative;
-  top: 400px;
+  top: 370px;
   left: 50%;
   transform: translateX(-50%); // 가운데 정렬을 위한 코드
   z-index: 2;
@@ -67,8 +68,8 @@ export const FName = styled.div`
   line-height: normal;
 
   position: relative;
-  top: 420px;
-  left: 36%;
+  top: 380px;
+  left: 50%;
   transform: translateX(-50%); // 가운데 정렬을 위한 코드
   z-index: 2;
 `;
