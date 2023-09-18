@@ -38,7 +38,7 @@ const MainP = () => {
 
   const navigate = useNavigate();
   const location = useLocation();
-  const MENU_LIST = ['Login', 'My Page', 'Search', 'How to'];
+  const MENU_LIST = ['Main', 'Login', 'Search', 'My Page'];
 
   function handleMovePage(menu) {
     switch (menu) {

@@ -11,7 +11,7 @@ export const MasonryItem = styled.div`
 
   display: flex;
   flex-direction: column;
-  justify-content: start;
+  justify-content: space-between;
   align-items: center;
 `;
 
@@ -23,8 +23,8 @@ export const Title = styled.p`
   line-height: 1.5;
 `;
 export const DataImg = styled.img`
-  width: ${(props) => props.width || '25rem'};
-  margin: 2rem;
+  width: ${(props) => props.width || '23rem'};
+  margin: 1.5rem;
 `;
 export const ContentTag = styled.p`
   background: linear-gradient(92deg, #f2a99e 2.11%, #ed6f96 50.54%, #deb6de 100%);
@@ -68,7 +68,7 @@ export const GraphSub = styled.p`
 export const CommentWrapper = styled.div`
   width: 100%;
   height: 100%;
-  overflow-y: scroll;
+  overflow-y: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -91,13 +91,16 @@ export const CommentWrapper = styled.div`
   }
 `;
 export const CommentProfile = styled.img`
-  width: 8rem;
+  width: 5rem;
+  border-radius: 50%;
 `;
 export const Comment = styled.div`
   display: flex;
   align-items: center;
   gap: 2rem;
   margin: 1rem;
+
+  width: 80%;
 `;
 export const CommentName = styled.p`
   color: #eb6b92;
