@@ -1,4 +1,6 @@
 import * as L from './LoginPStyle';
+import { GoogleLogin } from '@react-oauth/google';
+import { GoogleOAuthProvider } from '@react-oauth/google';
 
 const LoginP = () => {
   return (
@@ -12,7 +14,19 @@ const LoginP = () => {
         <L.Detail>
           로그인하여 맞춤 기능을 <br /> 사용하세요!
         </L.Detail>
-        <L.Btn>구글 계정으로 로그인</L.Btn>
+        <GoogleOAuthProvider clientId="371787591796-g3ald977m3iuat18k7a4imbqvpn9bh5h.apps.googleusercontent.com">
+          <GoogleLogin
+            onSuccess={(credentialResponse) => {
+              console.log(credentialResponse);
+              window.location.href = '/mypage';
+            }}
+            onError={() => {
+              console.log('Login Failed');
+            }}
+            useOneTap
+          />
+        </GoogleOAuthProvider>
+        ;
       </L.Div>
     </L.Container>
   );
