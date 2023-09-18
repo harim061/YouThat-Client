@@ -7,6 +7,7 @@ import Search from './pages/UserAnalytics';
 import Content from './pages/ContentAnalytics';
 import Navigation from './components/common/Navigation';
 import Footer from './components/common/Footer';
+import CommentD from './pages/CommentD';
 
 export default function Router() {
   return (
@@ -19,7 +20,7 @@ export default function Router() {
           <Route path="/mypage" element={<Mypage />} />
           <Route path="/search" element={<Search />} />
           <Route path="/content" element={<Content />} />
-          <Route path="/howto" element={<Main />} />
+          <Route path="/commentDetail" element={<CommentD />} />
         </Routes>
         <Footer />
       </BrowserRouter>
