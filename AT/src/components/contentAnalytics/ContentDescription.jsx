@@ -7,15 +7,19 @@ import Want from '../common/analytics/Want';
 import * as U from './../userAnalytics/UserAnalyticsStyle';
 import { MasonryGrid } from '@egjs/react-grid';
 import Profile from './../../img/UserProfile.svg';
+import Thum from '../../img/main/maxresdefault.jpg';
 
 export default function ContentDescription() {
   return (
     <>
       <U.UserDescriptionWrapper>
         <U.UserProfile>
-          <U.DescriptonTitle>사유 부장개그 영상을 분석했습니다.</U.DescriptonTitle>
-          <U.ProfileDescription>조회수 | 좋아요 | 댓글</U.ProfileDescription>
-          <U.ProfileImg src={Profile} />
+          <U.DescriptonTitle>
+            (SUB) 푸바오가 선택한 쌍둥이 동생들의 이름은?? 지금 바로 쌍둥이 이름 투표하러 가자!!🐼│Panda World<br></br>{' '}
+            영상을 분석했습니다.
+          </U.DescriptonTitle>
+          <U.ProfileDescription>조회수 121만회 | 좋아요 3.8만개 | 댓글 1,995개</U.ProfileDescription>
+          <U.ContentImg src={Thum} />
         </U.UserProfile>
       </U.UserDescriptionWrapper>
       <U.GridWrapper>

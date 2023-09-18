@@ -84,8 +84,18 @@ const AboutP = () => {
           </A.Ment2>
         </>
       )}
-      <A.Btn1>분석하러 가기</A.Btn1>
-      <A.Btn1>내 유튜브 분석하러 가기</A.Btn1>
+      <A.Btn1
+        onClick={() => {
+          window.location = '/content';
+        }}>
+        분석하러 가기
+      </A.Btn1>
+      <A.Btn1
+        onClick={() => {
+          window.location = '/search';
+        }}>
+        내 유튜브 분석하러 가기
+      </A.Btn1>
       <A.Ment mt="410px">AT을 똑똑하게 사용하는 방법</A.Ment>
       <A.HowDiv>
         <A.SPrev src={Apre} onClick={handlePrev} />

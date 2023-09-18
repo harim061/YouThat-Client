@@ -11,7 +11,7 @@ export default function Mypage() {
   return (
     <>
       <U.UserDescriptionWrapper>
-        <U.DescriptonTitle>띱 Deep님! 안녕하세요!</U.DescriptonTitle>
+        <U.DescriptonTitle>김묘우님! 안녕하세요!</U.DescriptonTitle>
       </U.UserDescriptionWrapper>
 
       <U.GridWrapper>
@@ -20,7 +20,6 @@ export default function Mypage() {
           <Comment />
           <Grade />
           <Hashtag />
-          <Search />
         </U.Flex>
       </U.GridWrapper>
     </>

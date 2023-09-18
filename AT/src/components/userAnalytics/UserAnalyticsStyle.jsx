@@ -9,7 +9,7 @@ export const UserDescriptionWrapper = styled.section`
   gap: 13rem;
 `;
 export const UserProfile = styled.div`
-  height: 30rem;
+  height: 35rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -18,8 +18,10 @@ export const UserProfile = styled.div`
 `;
 export const DescriptonTitle = styled.h2`
   color: #5b586c;
-  font-size: 2.5rem;
+  font-size: 3rem;
   font-weight: 600;
+  text-align: center;
+  line-height: 1.2;
 `;
 export const ProfileDescription = styled.p`
   color: #aaa;
@@ -29,6 +31,10 @@ export const ProfileDescription = styled.p`
 export const ProfileImg = styled.img`
   width: 20rem;
   height: 20rem;
+  border-radius: 50%;
+`;
+export const ContentImg = styled.img`
+  width: 40rem;
 `;
 export const UserGrade = styled.div`
   height: 20rem;

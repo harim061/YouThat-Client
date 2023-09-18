@@ -9,7 +9,7 @@ export default function Navigation() {
   const location = useLocation();
   const isVisible = useRecoilValue(visibilityState);
 
-  const MENU_LIST = ['Login', 'My Page', 'Search', 'How to'];
+  const MENU_LIST = ['Main', 'Login', 'Search', 'My Page'];
 
   function handleMovePage(menu) {
     switch (menu) {
@@ -22,7 +22,7 @@ export default function Navigation() {
       case 'Search':
         navigate('/search');
         break;
-      case 'How to':
+      case 'Main':
         navigate('/');
         break;
       default:

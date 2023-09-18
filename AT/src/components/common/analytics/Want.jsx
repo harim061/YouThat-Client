@@ -1,11 +1,11 @@
 import * as A from './AnalyticsStyle';
-import graph from './../../../img/WantGraph.svg';
+import graph from './../../../img/UserWantGraph.svg';
 
 export default function Want() {
   return (
     <A.MasonryItem>
       <A.Title>
-        띱 Deep님의<br></br> 구독자들은 원해요!
+        김묘우님의<br></br> 구독자들은 원해요!
       </A.Title>
       <A.DataImg src={graph} />
       <A.GraphSub>
