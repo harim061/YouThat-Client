@@ -26,7 +26,6 @@ const LoginP = () => {
             useOneTap
           />
         </GoogleOAuthProvider>
-        ;
       </L.Div>
     </L.Container>
   );

@@ -96,7 +96,7 @@ export const CommentProfile = styled.img`
 `;
 export const Comment = styled.div`
   display: flex;
-  align-items: center;
+  align-items: start;
   gap: 2rem;
   margin: 1rem;
 

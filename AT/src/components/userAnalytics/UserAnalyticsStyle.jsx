@@ -15,6 +15,8 @@ export const UserProfile = styled.div`
   justify-content: space-between;
   align-items: center;
   gap: 2rem;
+  height: auto-fit;
+  margin-bottom: 3rem;
 `;
 export const DescriptonTitle = styled.h2`
   color: #5b586c;
