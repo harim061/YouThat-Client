@@ -14,7 +14,7 @@ export default function ContentDescription() {
     <>
       <U.UserDescriptionWrapper>
         <U.UserProfile>
-          <U.DescriptonTitle>
+          <U.DescriptonTitle style={{ width: '800px', wordBreak: 'keep-all' }}>
             국제커플 해외 결혼식 브이로그👰🏻💍 폭풍 소나기 우여곡절 끝에 진행된 웨딩 1부🪄✨ 유네린 보바<br></br> 영상을
             분석했습니다.
           </U.DescriptonTitle>

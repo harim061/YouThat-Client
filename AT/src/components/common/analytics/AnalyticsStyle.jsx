@@ -6,7 +6,6 @@ export const MasonryItem = styled.div`
   grid-column: ${(props) => props.gridColumn || 'auto'};
   grid-row: ${(props) => props.gridRow || 'auto'};
   border-radius: 30px;
-  background: #fff;
   padding: 3rem 1rem;
 
   display: flex;

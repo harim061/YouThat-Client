@@ -14,7 +14,7 @@ export default function ContentDescription() {
     <>
       <U.UserDescriptionWrapper>
         <U.UserProfile>
-          <U.DescriptonTitle>
+          <U.DescriptonTitle style={{ width: '900px', wordBreak: 'keep-all' }}>
             (SUB) 푸바오가 선택한 쌍둥이 동생들의 이름은?? 지금 바로 쌍둥이 이름 투표하러 가자!!🐼│Panda World<br></br>{' '}
             영상을 분석했습니다.
           </U.DescriptonTitle>
