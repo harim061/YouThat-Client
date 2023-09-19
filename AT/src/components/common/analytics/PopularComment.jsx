@@ -51,28 +51,66 @@ export default function Analytics() {
       percent: '',
     },
   ];
+  const CommentsContents = [
+    {
+      profile:
+        'https://yt3.ggpht.com/QeL6DCvq6RAYw5YVCazST9rKa3onSLyvqxbEOz8Wn_ZjLXrkQV3grv3B4fGuE4iwqicWg_Vy=s88-c-k-c0x00ffffff-no-rj',
+      username: '@KYO_ismylife',
+      comment:
+        '아 이게 진짜 결혼식이구나 싶어요,,,항상 경직되고 딱딱한 뭔가 관례같은 결혼식만 봤었는데 혜린님 결혼식보니까 친한친구들과 결혼식에 오신 사람들이 모두 진심으로 축하해주시고 즐기는거같아서 너무 좋아보이네여ㅜㅜㅜㅠㅠ 넘 따숩🥹 저도 외국에서 하고픈 마음이들어요ㅋㅋㅋㅋ아직 아무도 없지만^^ 혹시 아버지랑 입장하는게 아닌 들러리친구분들?이랑 들어가는게 외국문화인가요? 넘 더 즐거워보여서 여쭤봅니당!!!',
+      percent: '',
+    },
+    {
+      profile:
+        'https://yt3.ggpht.com/o2Sl-U5_brwxurRZ1Z9srL6C6MG-fvjpNFCq53mnbq-GgvygTpO-ADQUMYUemTsRcNcwOVEOjIs=s88-c-k-c0x00ffffff-no-rj',
+      username: '@user-xr9ki1pd1m',
+      comment:
+        '진짜 누군가의 결혼식을, 그것도 (유튜브로 만난 것 외에는) 연고없는 분의 결혼을 이렇게 마음을 다해 축하하고 응원하게 된 건 처음인 것 같아요! 결혼 너무너무 축하드리고 앞으로 두분 함께 행복한 결혼생활 보내시길 바라요! 💍👰🏻‍♀️🤵🏻‍♂️🌷',
+      percent: '',
+    },
+    {
+      profile:
+        'https://yt3.ggpht.com/8l4WGMnQGvzr9aTds29AbCbQQTvONltBhNGVw0eOETvqXmUL-QonyLiMV2jMgM_bsgh9qCPyNw=s88-c-k-c0x00ffffff-no-rj',
+      username: '@aeroneith',
+      comment:
+        'Сначала случайно попалось ваше видео об отношениях на расстоянии, а теперь также случайно уже пришло видео со свадьбой Ура, счастья вам, случайные лапушки ❤',
+      percent: '',
+    },
+  ];
   return (
     <A.MasonryItem width={'70rem'}>
       <A.Title>가장 인기있는 댓글이에요!</A.Title>
-      {location.pathname === '/search'
-        ? Comments.map((c) => (
-            <A.Comment key={c.username}>
-              <A.CommentProfile src={c.profile} />
-              <div>
-                <A.CommentName>{c.username}</A.CommentName>
-                <A.CommentContent>{c.comment}</A.CommentContent>
-              </div>
-            </A.Comment>
-          ))
-        : CommentsContent.map((c) => (
-            <A.Comment key={c.username}>
-              <A.CommentProfile src={c.profile} />
-              <div>
-                <A.CommentName>{c.username}</A.CommentName>
-                <A.CommentContent>{c.comment}</A.CommentContent>
-              </div>
-            </A.Comment>
-          ))}
+      <A.CommentWrapper>
+        {location.pathname === '/user'
+          ? Comments.map((c) => (
+              <A.Comment key={c.username}>
+                <A.CommentProfile src={c.profile} />
+                <div>
+                  <A.CommentName>{c.username}</A.CommentName>
+                  <A.CommentContent>{c.comment}</A.CommentContent>
+                </div>
+              </A.Comment>
+            ))
+          : location.pathname === '/content'
+          ? Comments.map((c) => (
+              <A.Comment key={c.username}>
+                <A.CommentProfile src={c.profile} />
+                <div>
+                  <A.CommentName>{c.username}</A.CommentName>
+                  <A.CommentContent>{c.comment}</A.CommentContent>
+                </div>
+              </A.Comment>
+            ))
+          : CommentsContents.map((c) => (
+              <A.Comment key={c.username}>
+                <A.CommentProfile src={c.profile} />
+                <div>
+                  <A.CommentName>{c.username}</A.CommentName>
+                  <A.CommentContent>{c.comment}</A.CommentContent>
+                </div>
+              </A.Comment>
+            ))}
+      </A.CommentWrapper>
     </A.MasonryItem>
   );
 }
