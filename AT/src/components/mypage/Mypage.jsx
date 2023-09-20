@@ -5,7 +5,6 @@ import * as U from '../userAnalytics/UserAnalyticsStyle';
 import { MasonryGrid } from '@egjs/react-grid';
 import Profile from './../../img/UserProfile.svg';
 import Hashtag from './Hashtag';
-import Search from './Search';
 
 export default function Mypage() {
   return (

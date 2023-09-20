@@ -4,8 +4,9 @@ import Button from '../common/Button';
 import { Link } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 import { RotateLoader } from 'react-spinners';
+import * as AB from '../main/AboutStyle';
 
-export default function Search() {
+const SearchPage = () => {
   // url 넣으면 썸네일 나오게 하는 코드
   const [url, setUrl] = useState('');
   const [loading, setLoading] = useState(false);
@@ -14,6 +15,7 @@ export default function Search() {
   // URL 입력값이 변경될 때 호출되는 함수
   const handleInputChange = (event) => {
     setUrl(event.target.value);
+    console.log('검색');
   };
 
   // URL 입력 후 5초 후에 YouTube를 표시하는 함수
@@ -29,6 +31,7 @@ export default function Search() {
   // URL 입력 후 Enter 키 입력 처리
   const handleKeyPress = (event) => {
     if (event.key === 'Enter') {
+      event.preventDefault();
       console.log('검색');
       handleSubmit();
     }
@@ -40,18 +43,18 @@ export default function Search() {
     setShowYoutube(false);
   };
   return (
-    <A.MasonryItem width={'126rem'} height={'auto-fit'}>
-      <A.Title>영상 분석하기</A.Title>
-      <M.Input placeholder="URL을 입력해주세요." onChange={handleInputChange} onKeyPress={handleKeyPress}></M.Input>
+    <A.MasonryItem style={{ marginBottom: '300px' }}>
+      <A.Title style={{ marginTop: '50px' }}>영상 분석하기</A.Title>
+      <M.Input placeholder="URL을 입력해주세요." onChange={handleInputChange} onKeyPress={handleKeyPress} />
       {loading && (
-        <RotateLoader color="#EB6B92" margin={10} cssOverride={{ marginTop: '90px', marginBottom: '20px' }} />
+        <RotateLoader color="#EB6B92" margin={10} cssOverride={{ marginTop: '90px', marginBottom: '50px' }} />
       )}
       {showYoutube && (
         <>
-          <A.Youtube src="https://i.ytimg.com/vi/EcZarzvkWuA/maxresdefault.jpg" />
-          <A.Ment2 href="https://www.youtube.com/watch?v=EcZarzvkWuA" target="blank">
+          <AB.Youtube src="https://i.ytimg.com/vi/EcZarzvkWuA/maxresdefault.jpg" />
+          <AB.Ment2 href="https://www.youtube.com/watch?v=EcZarzvkWuA" target="blank">
             국제커플 해외 결혼식 브이로그👰🏻💍 폭풍 소나기 우여곡절 끝에 진행된 웨딩 1부🪄✨ 유네린 보바
-          </A.Ment2>
+          </AB.Ment2>
         </>
       )}
       <Link to={'/contents'}>
@@ -59,4 +62,6 @@ export default function Search() {
       </Link>
     </A.MasonryItem>
   );
-}
+};
+
+export default SearchPage;

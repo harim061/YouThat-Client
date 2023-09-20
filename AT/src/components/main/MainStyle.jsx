@@ -14,14 +14,7 @@ export const Gradient = keyframes`
 
 `;
 export const Container = styled.div`
-  background: linear-gradient(
-    117deg,
-    #e4b49a 0%,
-    #ee6d94 41.49%,
-    #bc9be7 80.03%,
-    #884def 100%,
-    rgba(74, 81, 245, 0.8) 76.98%
-  );
+  background: linear-gradient(117deg, #e4b49a 0%, #ee6d94 41.49%, #bc9be7 80.03%, #884def 100%, #deb7e1);
   background-size: 200% 200%;
   animation: ${Gradient} 6s ease infinite;
 

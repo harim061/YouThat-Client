@@ -125,7 +125,7 @@ export const SDetail = styled.div`
 
 export const STag = styled.img`
   /*layout*/
-  margin-top: -10px;
+  margin-top: 30px;
   width: 250px;
   height: fit-content;
   position: absolute;
