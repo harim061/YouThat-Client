@@ -43,7 +43,7 @@ const SearchPage = () => {
     setShowYoutube(false);
   };
   return (
-    <A.MasonryItem style={{ marginBottom: '300px' }}>
+    <A.MasonryItem style={{ background: 'none' }}>
       <A.Title style={{ marginTop: '50px' }}>영상 분석하기</A.Title>
       <M.Input placeholder="URL을 입력해주세요." onChange={handleInputChange} onKeyPress={handleKeyPress} />
       {loading && (
